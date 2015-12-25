@@ -1,0 +1,42 @@
+   +-----------+ 
+   | Relatório |
+   +-----------+
+
+   Trabalho 2 : Mastermind - continuação
+
+   >>Introdução 
+   Neste trabalho pretendia-se a extensão do jogo Mastermind, de forma a introduzir-lhe novas funcionalidades, entre as quais, a capacidade de jogar com números ou com cores, assim como, de registar as jogadas efectuadas nos jogos anteriores, e com base nas mesmas efectuar alguns cálculos estatisticos.
+
+
+   >>Ideias gerais sobre a resolução do problema
+
+   (1) Jogar com números ou cores
+   Para adicionar a funcionalidade que permite jogar, tanto o Codificador como o Descodificador, no modo de cores, foram para isso utilizadas as funções que controlavam o input/output de hipóteses núméricas,  sendo os mesmos convertidos por uma função, nas cores correspondentes.
+
+   (2) Guardar dados no "historial"
+   A estrutura utilizada para guardar dados no ficheiro consite de um modo geral em: cada jogo é marcado pelo caracter '@'; no caso do codificador, as informações guardadas (hipoteses, respostas, e a solução final), são delimitadas pelos caracteres '$' e '&', e no caso do descodificador, as informações guardadas, são delimitadas pelos Žcaracteres '#' e '%'.
+   A seguir a esses dados, é guardado, no caso do descodificador, o caracter 'W', em caso de vítoria, seguido do número de tentativas (com menos uma unidade, de forma a ser guardado apenas um caracter), e em caso de derrota é guardado o caracter 'L'. No caso do Codificador, é guardado o caracter 'G'.
+
+   (3) Ler dados do "historial"
+   
+   - Cálculos estatisticos
+   Para se proceder à contagem do número de jogadas mínimo, médio, e máximo, efectudas pelo Descodificador até acertar, o programa programa procura no "historial", os caracteres 'W', relativos ao número de jogos vencidos pelo utilizador, e com os caracteres numéricos que se encontra a seguir a este, elabora uma lista de inteiros, que permitirá obter os dados estatisticos pretendidos. 
+   De forma a conseguir calcular o nº de jogos efectudos pelo Codificador, o programa conta o número de caracteres 'G', que se encontram no "historial".
+   Para calcular o nº total de jogos realizados, o programa conta o número de caracteres '@' que se encontram no "historial".
+   
+   - Reconstrução dos jogos anteriores 
+   Neste processo, com base nas informções que o utilizador fornece, relativamente ao nº do jogo que deseja visualizar, e se esse jogo é do modo Codificador ou Descodificador. 
+   No caso do Codificador, o programa procura o jogo, o qual se encontra delimitado delimitado pelos caracteres '$' e '&', onde o numero do jogo coincide com o número de carateres '$' que terão de ser percorridos.
+   O caso do Descodificador é análogo, i.e. o programa procura o jogo deimitado pelos caracteres '#' e '%', onde o número do jogo coincide com o número de caracteres '#' que terão de ser percorridos.
+
+   >> Observações 
+   - O último subponto dos objectivos, i.e. relativo ao número de códigos que sairam com uma dado número ou cor, não foi implematado, pois foi aqui que tive maior dificuldade, onde as soluções a que cheguei, por não serem totalmente eficazes, não foram colocadas no programa.
+   - Os dados do jogo, i.e as hipoteses introduzidas pelo utilizador, são guardadas no historial na forma de digito.  
+   
+
+   >> Autor
+      Este trabalho foi realizado por:
+      Oscar Lopes / Nº 16233
+ 
+
+  
