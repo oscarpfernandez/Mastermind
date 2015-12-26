@@ -16,6 +16,9 @@ These are the main "trick" for the whole project.
 ```hs
 [ [1,2,2,1], [2,3,5,4], [3,3,1,1], [4,5,2,4], [5,6,5,6], [6,6,4,3] ]
 ```
+
+For more information on the Greenwell keys see: http://www.cut-the-knot.org/ctk/Mastermind.shtml
+
 ## Run this project
 Install the Haskell interpreter and point to the MM module. 
 
